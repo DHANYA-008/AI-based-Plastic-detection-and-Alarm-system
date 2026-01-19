@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plastic Detection – Webcam</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f2f2f2;
+        }
+        .box {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        img {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>AI-Based Plastic Detection & Alarm System</h2>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <p>Webcam live feed with plastic detection</p>
+</div>
+
+</body>
+</html>
